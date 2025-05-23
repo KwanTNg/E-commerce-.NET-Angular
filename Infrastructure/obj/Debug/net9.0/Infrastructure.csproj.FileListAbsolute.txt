@@ -1,0 +1,15 @@
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/bin/Debug/net9.0/Infrastructure.deps.json
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/bin/Debug/net9.0/Infrastructure.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/bin/Debug/net9.0/Infrastructure.pdb
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/bin/Debug/net9.0/Core.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/bin/Debug/net9.0/Core.pdb
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.AssemblyReference.cache
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfoInputs.cache
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfo.cs
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.CoreCompileInputs.cache
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastr.15EFFBFE.Up2Date
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/refint/Infrastructure.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll
