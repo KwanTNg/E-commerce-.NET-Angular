@@ -1,0 +1,23 @@
+Open Nuget Gallery
+
+Install Microsoft.EntityFrameworkCore.SqlServer
+Add in infrastructure
+
+Install Microsoft.EntityFrameworkCore.Design
+Add in API
+
+
+Download Docker for desktop and install
+Change the CPU and RAM limit in setting
+Create yml file in VS Code
+
+In terminal
+docker compose up -d
+
+Check if dotnet-ef was installed globally
+If not, go to nuget.org/packages/dotnet-ef
+
+dotnet ef migrations add InitialCreate -s API -p Infrastructure
+S is startup project
+
+dotnet ef migrations remove -s API -p Infrastructure
