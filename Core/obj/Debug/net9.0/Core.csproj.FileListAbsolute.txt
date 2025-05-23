@@ -9,3 +9,4 @@
 /Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Core/obj/Debug/net9.0/refint/Core.dll
 /Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Core/obj/Debug/net9.0/Core.pdb
 /Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Core/obj/Debug/net9.0/ref/Core.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/Core/obj/Debug/net9.0/Core.sourcelink.json
