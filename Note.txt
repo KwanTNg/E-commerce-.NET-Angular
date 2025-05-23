@@ -24,4 +24,10 @@ dotnet ef migrations remove -s API -p Infrastructure
 
 Sql server edge is not compatible with Mac Arm, please use sql server 2022
 
-dotnet new gitignore 
+dotnet new gitignore
+
+Drop database
+dotnet ef database drop -p Infrastructure -s API
+
+For seeding database, if the first migration was not run, need to run first
+dotnet ef migrations add InitialCreate -p Infrastructure -s API

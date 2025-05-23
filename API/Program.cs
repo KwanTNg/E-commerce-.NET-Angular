@@ -21,4 +21,20 @@ var app = builder.Build();
 
 app.MapControllers();
 
+//this is use outside of dependency injection
+try
+{
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<StoreContext>();
+    //if database does not exist, automatically create a database
+    await context.Database.MigrateAsync();
+    await StoreContextSeed.SeedAsync(context);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex);
+    throw;
+}
+
 app.Run();
