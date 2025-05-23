@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yf24mHn+jBU=",
+  "dgSpecHash": "FTVG6IMsyLE=",
   "success": true,
   "projectFilePath": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/API.csproj",
-  "expectedPackageFiles": [
-    "/Users/kwantungng/.nuget/packages/microsoft.aspnetcore.openapi/9.0.1/microsoft.aspnetcore.openapi.9.0.1.nupkg.sha512",
-    "/Users/kwantungng/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
