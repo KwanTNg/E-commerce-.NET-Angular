@@ -21,3 +21,7 @@ dotnet ef migrations add InitialCreate -s API -p Infrastructure
 S is startup project
 
 dotnet ef migrations remove -s API -p Infrastructure
+
+Sql server edge is not compatible with Mac Arm, please use sql server 2022
+
+dotnet new gitignore 
