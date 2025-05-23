@@ -1,3 +1,4 @@
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,8 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 {
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+//Scope to the lifetime of HTTP request
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 // Anything before this line is considered service
 // Anything after this line is considered middleware
