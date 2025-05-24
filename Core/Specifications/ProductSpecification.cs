@@ -5,14 +5,13 @@ namespace Core.Specifications;
 
 public class ProductSpecification : BaseSpecification<Product>
 {
-    //Below is a traditional constructor
-    //Critera(e.g. brand, type) is property of the base class
-    public ProductSpecification(string? brand, string? type, string? sort) : base(x =>
-    (string.IsNullOrWhiteSpace(brand) || x.Brand == brand) &&
-    (string.IsNullOrWhiteSpace(type) || x.Type == type)
+    //Pass object as argument
+    public ProductSpecification(ProductSpecsParams specsParams) : base(x =>
+    (!specsParams.Brands.Any() || specsParams.Brands.Contains(x.Brand)) &&
+    (!specsParams.Types.Any() || specsParams.Types.Contains(x.Type))
     )
     {
-        switch (sort)
+        switch (specsParams.Sort)
         {
             case "priceAsc":
                 AddOrderBy(x => x.Price);

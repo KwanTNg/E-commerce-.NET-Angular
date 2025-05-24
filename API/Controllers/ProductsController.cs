@@ -14,12 +14,12 @@ namespace API.Controllers;
 [Route("api/[controller]")]
 public class ProductsController(IGenericRepository<Product> repo) : ControllerBase
 {
-
+    //Need to specify FromQuery as default is FromBody
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
+    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts([FromQuery]ProductSpecsParams specsParams)
     {
         //Add argus to constructor of ProductSpecification, which is designed for generic repository
-        var spec = new ProductSpecification(brand, type, sort);
+        var spec = new ProductSpecification(specsParams);
         var products = await repo.ListAsync(spec);
         return Ok(products);
     }
