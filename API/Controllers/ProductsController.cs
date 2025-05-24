@@ -19,7 +19,7 @@ public class ProductsController(IGenericRepository<Product> repo) : ControllerBa
     public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
     {
         //Add argus to constructor of ProductSpecification, which is designed for generic repository
-        var spec = new ProductSpecification(brand, type);
+        var spec = new ProductSpecification(brand, type, sort);
         var products = await repo.ListAsync(spec);
         return Ok(products);
     }
