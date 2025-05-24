@@ -6,6 +6,6 @@ namespace Core.Interfaces;
 //Support generic filtering and sorting
 public interface ISpecification<T>
 {
-    Expression<Func<T, bool>> Criteria { get; }
+    Expression<Func<T, bool>>? Criteria { get; }
 
 }

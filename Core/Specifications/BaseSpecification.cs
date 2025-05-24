@@ -4,13 +4,12 @@ using Core.Interfaces;
 
 namespace Core.Specifications;
 
-public class BaseSpecification<T> : ISpecification<T>
+//To enable creating specfication without the where clause
+//Add ? to make criteria optional
+public class BaseSpecification<T>(Expression<Func<T, bool>>? criteria) : ISpecification<T>
 {
-    private readonly Expression<Func<T, bool>> criteria;
-    //When we create a new instance of base specification, we're going to be able to pass in an expression
-    public BaseSpecification(Expression<Func<T, bool>> criteria)
-    {
-        this.criteria = criteria;
-    }
-    public Expression<Func<T, bool>> Criteria => criteria;
+    //Create an emptied constructor
+    protected BaseSpecification() : this(null) { }
+
+    public Expression<Func<T, bool>>? Criteria => criteria;
 }

@@ -1,6 +1,7 @@
 using System;
 using Core.Entities;
 using Core.Interfaces;
+using Core.Specifications;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -17,9 +18,10 @@ public class ProductsController(IGenericRepository<Product> repo) : ControllerBa
     [HttpGet]
     public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
     {
-        // filtering and sorting does not work at this stage
-        return Ok(await repo.ListAllAsync());
-        // return await context.Products.ToListAsync();
+        //Add argus to constructor of ProductSpecification, which is designed for generic repository
+        var spec = new ProductSpecification(brand, type);
+        var products = await repo.ListAsync(spec);
+        return Ok(products);
     }
 
     [HttpGet("{id:int}")] // api/products/2
