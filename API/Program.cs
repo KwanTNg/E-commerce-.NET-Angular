@@ -14,6 +14,8 @@ builder.Services.AddDbContext<StoreContext>(opt =>
 });
 //Scope to the lifetime of HTTP request
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+//Because we don't know the type, so use typeof
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 // Anything before this line is considered service
 // Anything after this line is considered middleware
