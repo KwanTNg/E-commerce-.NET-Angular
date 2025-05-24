@@ -8,23 +8,24 @@ using Microsoft.EntityFrameworkCore;
 namespace API.Controllers;
 
 //We will use our respository instead of store context here
+//Use GenericRepository instead
 [ApiController]
 [Route("api/[controller]")]
-public class ProductsController(IProductRepository repo) : ControllerBase
+public class ProductsController(IGenericRepository<Product> repo) : ControllerBase
 {
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Product>>> GetProducts(string? brand, string? type, string? sort)
+    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string? sort)
     {
-        // becasue it will return a list, need to use Ok()
-        return Ok(await repo.GetProductsAsync(brand, type, sort));
+        // filtering and sorting does not work at this stage
+        return Ok(await repo.ListAllAsync());
         // return await context.Products.ToListAsync();
     }
 
     [HttpGet("{id:int}")] // api/products/2
     public async Task<ActionResult<Product>> GetProduct(int id)
     {
-        var product = await repo.GetProductByIdAsync(id);
+        var product = await repo.GetByIdAsync(id);
         // var product = await context.Products.FindAsync(id);
         if (product == null) return NotFound();
         return product;
@@ -33,8 +34,8 @@ public class ProductsController(IProductRepository repo) : ControllerBase
     [HttpPost]
     public async Task<ActionResult<Product>> CreateProduct(Product product)
     {
-        repo.AddProduct(product);
-        if (await repo.SaveChangesAsync())
+        repo.Add(product);
+        if (await repo.SaveAllAsync())
         {
             //Call GetProduct(int id) method, need to provide id
             return CreatedAtAction("GetProduct", new { id = product.Id }, product);
@@ -50,12 +51,12 @@ public class ProductsController(IProductRepository repo) : ControllerBase
     {
         if (product.Id != id || !ProductExists(id))
             return BadRequest("Cannot update this product");
-        repo.UpdateProduct(product);
+        repo.Update(product);
         // Check if it is modified
         //context.Entry(product).State = EntityState.Modified;
         //await context.SaveChangesAsync();
         //return NoContent();
-        if (await repo.SaveChangesAsync())
+        if (await repo.SaveAllAsync())
         {
             return NoContent();
         }
@@ -65,14 +66,14 @@ public class ProductsController(IProductRepository repo) : ControllerBase
     [HttpDelete("{id:int}")]
     public async Task<ActionResult> DeleteProduct(int id)
     {
-        var product = await repo.GetProductByIdAsync(id);
+        var product = await repo.GetByIdAsync(id);
         //var product = await context.Products.FindAsync(id);
         if (product == null) return NotFound();
-        repo.DeleteProduct(product);
+        repo.Remove(product);
         //context.Products.Remove(product);
         //await context.SaveChangesAsync();
         //return NoContent();
-        if (await repo.SaveChangesAsync())
+        if (await repo.SaveAllAsync())
         {
             return NoContent();
         }
@@ -82,18 +83,20 @@ public class ProductsController(IProductRepository repo) : ControllerBase
     [HttpGet("brands")]
     public async Task<ActionResult<IReadOnlyList<string>>> GetBrands()
     {
-        return Ok(await repo.GetBrandsAsync());
+        //TODO: Implement method later as current generic repository does not support
+        return Ok();
     }
 
     [HttpGet("types")]
     public async Task<ActionResult<IReadOnlyList<string>>> GetTypes()
     {
-        return Ok(await repo.GetTypesAsync());
+        //TODO: Implement method later as current generic repository does not support
+        return Ok();
     }
 
     private bool ProductExists(int id)
     {
-        return repo.ProductExists(id);
+        return repo.Exists(id);
         //return context.Products.Any(x => x.Id == id);
     }
 
