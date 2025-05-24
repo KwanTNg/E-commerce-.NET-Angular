@@ -19,6 +19,22 @@ public class BaseSpecification<T>(Expression<Func<T, bool>>? criteria) : ISpecif
 
     //for projection
     public bool IsDistinct { get; private set; }
+    //for pagination
+    public int Take { get; private set; }
+
+    public int Skip { get; private set; }
+
+    public bool IsPagingEnabled { get; private set; }
+
+    //pagination part 3
+    public IQueryable<T> ApplyCriteria(IQueryable<T> query)
+    {
+        if (Criteria != null)
+        {
+            query = query.Where(Criteria);
+        }
+        return query;
+    }
 
     protected void AddOrderBy(Expression<Func<T, object>> orderByExpression)
     {
@@ -33,6 +49,14 @@ public class BaseSpecification<T>(Expression<Func<T, bool>>? criteria) : ISpecif
     protected void ApplyDistinct()
     {
         IsDistinct = true;
+    }
+
+    //for pagination
+    protected void ApplyPaging(int skip, int take)
+    {
+        Skip = skip;
+        Take = take;
+        IsPagingEnabled = true;
     }
 }
 //This class is created for projection(e.g. get the list of brand of products)

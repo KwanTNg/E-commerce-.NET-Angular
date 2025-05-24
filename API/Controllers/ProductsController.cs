@@ -1,4 +1,5 @@
 using System;
+using API.RequestHelpers;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
@@ -21,7 +22,12 @@ public class ProductsController(IGenericRepository<Product> repo) : ControllerBa
         //Add argus to constructor of ProductSpecification, which is designed for generic repository
         var spec = new ProductSpecification(specsParams);
         var products = await repo.ListAsync(spec);
-        return Ok(products);
+        //pagination part 3
+        var count = await repo.CountAsync(spec);
+        var pagination = new Pagination<Product>(specsParams.PageIndex,
+            specsParams.PageSize, count, products);
+
+        return Ok(pagination);
     }
 
     [HttpGet("{id:int}")] // api/products/2

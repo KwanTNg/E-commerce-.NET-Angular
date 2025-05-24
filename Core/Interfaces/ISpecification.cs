@@ -15,6 +15,12 @@ public interface ISpecification<T>
     //for projection
     bool IsDistinct { get; }
 
+    //for pagination part 1
+    int Take { get; }
+    int Skip { get; }
+    bool IsPagingEnabled { get; }
+    //for pagination part 3
+    IQueryable<T> ApplyCriteria(IQueryable<T> query);
 }
 
 //This class is created as no product or list of product will return
