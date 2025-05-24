@@ -12,4 +12,14 @@ public interface ISpecification<T>
     Expression<Func<T, object>>? OrderBy { get; }
     Expression<Func<T, object>>? OrderByDescending { get; }
 
+    //for projection
+    bool IsDistinct { get; }
+
+}
+
+//This class is created as no product or list of product will return
+//For projection (e.g. Get the list of brand for all products)
+public interface ISpecification<T, TResult> : ISpecification<T>
+{
+    Expression<Func<T, TResult>>? Select { get; }
 }
