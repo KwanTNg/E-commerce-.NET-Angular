@@ -14,10 +14,10 @@ public class ProductsController(IProductRepository repo) : ControllerBase
 {
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
+    public async Task<ActionResult<IEnumerable<Product>>> GetProducts(string? brand, string? type)
     {
         // becasue it will return a list, need to use Ok()
-        return Ok(await repo.GetProductsAsync());
+        return Ok(await repo.GetProductsAsync(brand, type));
         // return await context.Products.ToListAsync();
     }
 
