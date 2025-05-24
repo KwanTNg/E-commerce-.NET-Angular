@@ -1,19 +1,16 @@
-using System;
 using API.RequestHelpers;
 using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
-using Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace API.Controllers;
 
 //We will use our respository instead of store context here
 //Use GenericRepository instead
-[ApiController]
-[Route("api/[controller]")]
-public class ProductsController(IGenericRepository<Product> repo) : ControllerBase
+
+public class ProductsController(IGenericRepository<Product> repo) : BaseApiController
 {
     //Need to specify FromQuery as default is FromBody
     [HttpGet]
@@ -21,13 +18,9 @@ public class ProductsController(IGenericRepository<Product> repo) : ControllerBa
     {
         //Add argus to constructor of ProductSpecification, which is designed for generic repository
         var spec = new ProductSpecification(specsParams);
-        var products = await repo.ListAsync(spec);
-        //pagination part 3
-        var count = await repo.CountAsync(spec);
-        var pagination = new Pagination<Product>(specsParams.PageIndex,
-            specsParams.PageSize, count, products);
+       
 
-        return Ok(pagination);
+        return await CreatePagedResult(repo, spec, specsParams.PageIndex, specsParams.PageSize);
     }
 
     [HttpGet("{id:int}")] // api/products/2
