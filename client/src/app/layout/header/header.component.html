@@ -1,4 +1,4 @@
-<header class="border-b p-3 w-full">
+<header class="shadow-md p-3 w-full">
     <div class="flex align-middle items-center justify-between max-w-screen-2xl mx-auto">
         <!-- image height 64 pixels -->
         <img src="/images/logo.png" alt="app logo" class="max-h-16">
@@ -10,11 +10,12 @@
          </nav>
          <!-- align-middle vertical alignment -->
          <div class="flex gap-3 align-middle">
-            <a matBadge="5" matBadgeSize="large">
+            <!-- write css to customise the shopping cart icon -->
+            <a matBadge="5" matBadgeSize="large" class="custom-badge mt-2 mr-2">
                 <mat-icon>shopping_cart</mat-icon>
             </a>
             <button mat-stroked-button>Login</button>
-            <button mat-stroked-button>Login</button>
+            <button mat-stroked-button>Register</button>
          </div>
     </div>
 </header>
