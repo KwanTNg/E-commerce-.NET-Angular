@@ -41,3 +41,5 @@ mkcert -install
 Mkdir ssl
 cd ssl
 mkcert localhost
+
+ng add @angular/material
