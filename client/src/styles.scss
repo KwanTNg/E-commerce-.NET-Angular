@@ -1,10 +1,16 @@
 @use '@angular/material' as mat;
 
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+// $customTheme: mat.define-theme();
 $customTheme: mat.define-theme();
-
 @include mat.core();
+
+.container {
+    @apply mx-auto max-w-screen-2xl
+}
 
 .custom-theme {
     @include mat.all-component-themes($customTheme);
@@ -12,3 +18,4 @@ $customTheme: mat.define-theme();
         @apply rounded-md
     }
 }
+
