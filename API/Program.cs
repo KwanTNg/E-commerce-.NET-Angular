@@ -18,12 +18,17 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 //Because we don't know the type, so use typeof
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
+builder.Services.AddCors();
+
 // Anything before this line is considered service
 // Anything after this line is considered middleware
 var app = builder.Build();
 
 //Add the exception middleware
 app.UseMiddleware<ExceptionMiddleware>();
+
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
+.WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 app.MapControllers();
 
