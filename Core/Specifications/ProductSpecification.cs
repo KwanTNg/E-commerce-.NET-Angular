@@ -7,6 +7,8 @@ public class ProductSpecification : BaseSpecification<Product>
 {
     //Pass object as argument
     public ProductSpecification(ProductSpecsParams specsParams) : base(x =>
+    //Search functionality
+    (string.IsNullOrEmpty(specsParams.Search) || x.Name.ToLower().Contains(specsParams.Search)) &&
     (!specsParams.Brands.Any() || specsParams.Brands.Contains(x.Brand)) &&
     (!specsParams.Types.Any() || specsParams.Types.Contains(x.Type))
     )
