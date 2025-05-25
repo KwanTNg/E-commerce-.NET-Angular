@@ -31,3 +31,13 @@ dotnet ef database drop -p Infrastructure -s API
 
 For seeding database, if the first migration was not run, need to run first
 dotnet ef migrations add InitialCreate -p Infrastructure -s API
+
+
+Frontend
+
+mkcert
+brew install mkcert
+mkcert -install
+Mkdir ssl
+cd ssl
+mkcert localhost
