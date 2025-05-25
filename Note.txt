@@ -43,3 +43,7 @@ cd ssl
 mkcert localhost
 
 ng add @angular/material
+
+Tailwinds intelligence
+If does not work, go to settings
+"tailwindCSS.experimental.configFile": "client/src/styles.scss"
