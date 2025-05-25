@@ -1,3 +1,4 @@
+using API.Middleware;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -20,6 +21,9 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 // Anything before this line is considered service
 // Anything after this line is considered middleware
 var app = builder.Build();
+
+//Add the exception middleware
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.MapControllers();
 
