@@ -17,7 +17,7 @@ export class ShopService {
   brands: string[] = []
   
   //products store in component, should subscribe there
-  getProducts(brands?: string[], types?: string[]) {
+  getProducts(brands?: string[], types?: string[], sort?: string) {
     //build a query string
     let params = new HttpParams();
     //convert from string [] to string with ,
@@ -26,6 +26,10 @@ export class ShopService {
     }
     if (types && types.length > 0) {
       params = params.append('types', types.join(','));
+    }
+
+    if (sort) {
+      params = params.append('sort', sort);
     }
 
     params = params.append('pageSize', 20);
