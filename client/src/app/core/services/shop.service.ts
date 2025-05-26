@@ -45,6 +45,11 @@ export class ShopService {
     return this.http.get<Pagination<Product>>(this.baseUrl + 'products', {params})
   }
 
+  //Getting an individual product
+  getProduct(id: number) {
+    return this.http.get<Product>(this.baseUrl + 'products/' + id);
+  }
+
   //since types and brands are stored here, should subscribe here
   getBrands() {
     //to prevent it keep executing

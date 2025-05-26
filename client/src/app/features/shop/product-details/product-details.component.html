@@ -1,1 +1,4 @@
-<p>product-details works!</p>
+<!-- make sure we have product before trying to access -->
+ @if (product) {
+    <h1 class="text-2xl">{{product.name}}</h1>
+ }
