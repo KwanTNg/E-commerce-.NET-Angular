@@ -19,3 +19,9 @@ $customTheme: mat.define-theme();
     }
 }
 
+.text-primary {
+    color: #7d00fa;
+}
+button.match-input-height {
+    height: var(--mat-form-field-container-height) !important;
+}
