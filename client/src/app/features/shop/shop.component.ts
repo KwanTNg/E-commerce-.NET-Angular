@@ -2,17 +2,26 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ShopService } from '../../core/services/shop.service';
 import { Product } from '../../shared/models/product';
 import { ProductItemComponent } from "./product-item/product-item.component";
+import { MatDialog } from '@angular/material/dialog';
+import { FiltersDialogComponent } from './filters-dialog/filters-dialog.component';
+import { MatButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
 
 
 @Component({
   selector: 'app-shop',
-  imports: [ProductItemComponent],
+  imports: [ProductItemComponent, MatButton, MatIcon],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss'
 })
 export class ShopComponent implements OnInit {
   private shopService = inject(ShopService)
+  //inject service from Anuglar material
+  private dialogService = inject(MatDialog);
   products: Product[] = [];
+  //Save which brands and types are selected in dialog
+  selectedBrands: string[] = [];
+  selectedTypres: string[] = [];
 
   ngOnInit(): void {
     this.initializeShop();
@@ -24,6 +33,25 @@ export class ShopComponent implements OnInit {
     this.shopService.getProducts().subscribe({
       next: response => this.products = response.data,
       error: error => console.log(error)
+    })
+  }
+
+  //Brands, types selected in dialog, data 
+  openFiltersDialog() {
+    const dialogRef = this.dialogService.open(FiltersDialogComponent, {
+      minWidth: '500px',
+      data: {
+        selectedBrands: this.selectedBrands,
+        selectedTypres: this.selectedTypres
+      }
+    });
+    dialogRef.afterClosed().subscribe({
+      //Result data is from FiltersDialogComponent
+      next: result => {
+        this.selectedBrands = result.selectedBrands;
+        this.selectedTypres = result.selectedTypres;
+        //apply filters
+      }
     })
   }
 }

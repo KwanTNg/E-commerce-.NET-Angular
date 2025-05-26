@@ -3,6 +3,7 @@ import { ShopService } from '../../../core/services/shop.service';
 import { MatDivider } from '@angular/material/divider';
 import { MatListOption, MatSelectionList } from '@angular/material/list';
 import { MatButton } from '@angular/material/button';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-filters-dialog',
@@ -16,6 +17,20 @@ import { MatButton } from '@angular/material/button';
   styleUrl: './filters-dialog.component.scss'
 })
 export class FiltersDialogComponent {
-//We want ot use properties from a service, need to use public or omit private
+//We want to use properties from a service, need to use public or omit private
   shopService = inject(ShopService);
+  //for dialog
+  private dialogRef = inject(MatDialogRef<FiltersDialogComponent>);
+  data = inject(MAT_DIALOG_DATA);
+
+  selectedBrands: string[] = this.data.selectedBrands;
+  selectedTypes: string[] = this.data.selectedTypes;
+
+  applyFilters() {
+    this.dialogRef.close({
+      selectedBrands: this.selectedBrands,
+      selectedTypes: this.selectedTypes
+    })
+  }
+
 }
