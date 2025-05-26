@@ -9,12 +9,13 @@ import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuTrigger } from '@angular/material/menu'
 import { MatListOption, MatSelectionList, MatSelectionListChange } from '@angular/material/list'
 import { ShopParams } from '../../shared/models/shopParams';
-
+import { MatPaginator, PageEvent } from '@angular/material/paginator'
+import { Pagination } from '../../shared/models/pagination';
 
 @Component({
   selector: 'app-shop',
   imports: [ProductItemComponent, MatButton, MatIcon, MatMenu,
-    MatListOption, MatSelectionList, MatMenuTrigger
+    MatListOption, MatSelectionList, MatMenuTrigger, MatPaginator
   ],
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.scss'
@@ -23,7 +24,8 @@ export class ShopComponent implements OnInit {
   private shopService = inject(ShopService)
   //inject service from Anuglar material
   private dialogService = inject(MatDialog);
-  products: Product[] = [];
+  //for pagination, previously without pagination is products: Product[] = [];
+  products?: Pagination<Product>;
 
   sortOptions = [
     {name: 'Alphabetical', value: 'name'},
@@ -32,6 +34,7 @@ export class ShopComponent implements OnInit {
 ]
 //Use class(object) to supply params
 shopParams = new ShopParams();
+pageSizeOptions = [5,10,15,20]
 
   ngOnInit(): void {
     this.initializeShop();
@@ -45,9 +48,16 @@ shopParams = new ShopParams();
 
   getProducts() {
     this.shopService.getProducts(this.shopParams).subscribe({
-      next: response => this.products = response.data,
+      next: response => this.products = response,
       error: error => console.log(error)
     })
+  }
+
+  //for pagination
+  handlePageEvent(event: PageEvent) {
+    this.shopParams.pageNumber = event.pageIndex + 1;
+    this.shopParams.pageSize = event.pageSize;
+    this.getProducts();
   }
 
   //for sorting
@@ -56,6 +66,8 @@ shopParams = new ShopParams();
     const selectedOption = event.options[0];
     if (selectedOption) {
       this.shopParams.sort = selectedOption.value;
+      //Due to pagination, need to set this to page 1
+      this.shopParams.pageNumber = 1;
       this.getProducts();
     }
   }
@@ -75,6 +87,8 @@ shopParams = new ShopParams();
         if (result) {
         this.shopParams.brands = result.selectedBrands;
         this.shopParams.types = result.selectedTypes;
+        //Due to pagination, need to set this to page 1
+        this.shopParams.pageNumber = 1;
         this.getProducts();
         }
 
