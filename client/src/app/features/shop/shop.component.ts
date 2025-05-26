@@ -21,7 +21,7 @@ export class ShopComponent implements OnInit {
   products: Product[] = [];
   //Save which brands and types are selected in dialog
   selectedBrands: string[] = [];
-  selectedTypres: string[] = [];
+  selectedTypes: string[] = [];
 
   ngOnInit(): void {
     this.initializeShop();
@@ -42,15 +42,20 @@ export class ShopComponent implements OnInit {
       minWidth: '500px',
       data: {
         selectedBrands: this.selectedBrands,
-        selectedTypres: this.selectedTypres
+        selectedTypes: this.selectedTypes
       }
     });
     dialogRef.afterClosed().subscribe({
       //Result data is from FiltersDialogComponent
       next: result => {
         this.selectedBrands = result.selectedBrands;
-        this.selectedTypres = result.selectedTypres;
-        //apply filters
+        this.selectedTypes = result.selectedTypes;
+        //apply filters, get products from DB
+        this.shopService.getProducts(this.selectedBrands, this.selectedTypes).subscribe({
+          next: response => this.products = response.data,
+          error: error => console.log(error)
+        })
+
       }
     })
   }
