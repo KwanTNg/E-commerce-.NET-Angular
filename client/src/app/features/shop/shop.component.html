@@ -1,10 +1,12 @@
+<!-- Adding a if remove the flickering of loading products -->
+@if (products) {
 <!-- for open dialog button -->
 <div class="flex flex-col gap-3">
     <div class="flex justify-between">
         <mat-paginator
         (page)="handlePageEvent($event)"
             class="bg-white"
-            [length]="products?.count"
+            [length]="products.count"
             [pageSize]="shopParams.pageSize"
             [showFirstLastButtons]="true"
             [pageSizeOptions]="pageSizeOptions"
@@ -50,7 +52,7 @@
 
     <!-- 4 columns -->
     <div class="grid grid-cols-5 gap-4">
-         @for (product of products?.data; track product.id) {
+         @for (product of products.data; track product.id) {
             <!-- pass down product from parent (shop) to child (product-item) -->
             <app-product-item [product]="product"></app-product-item>
         }
@@ -67,5 +69,5 @@
         }
     </mat-selection-list>
 </mat-menu>
-
+}
 
