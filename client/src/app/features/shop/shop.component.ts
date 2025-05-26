@@ -8,6 +8,7 @@ import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatMenu, MatMenuTrigger } from '@angular/material/menu'
 import { MatListOption, MatSelectionList, MatSelectionListChange } from '@angular/material/list'
+import { ShopParams } from '../../shared/models/shopParams';
 
 
 @Component({
@@ -23,16 +24,14 @@ export class ShopComponent implements OnInit {
   //inject service from Anuglar material
   private dialogService = inject(MatDialog);
   products: Product[] = [];
-  //Save which brands and types are selected in dialog
-  selectedBrands: string[] = [];
-  selectedTypes: string[] = [];
-  //for sorting, also need to add provideAnimations() in app.config.ts
-  selectedSort: string = 'name';
+
   sortOptions = [
     {name: 'Alphabetical', value: 'name'},
     {name: 'Price: Low-High', value: 'priceAsc'},
     {name: 'Price: High-Low', value: 'priceDesc'}
 ]
+//Use class(object) to supply params
+shopParams = new ShopParams();
 
   ngOnInit(): void {
     this.initializeShop();
@@ -45,7 +44,7 @@ export class ShopComponent implements OnInit {
   }
 
   getProducts() {
-    this.shopService.getProducts(this.selectedBrands, this.selectedTypes, this.selectedSort).subscribe({
+    this.shopService.getProducts(this.shopParams).subscribe({
       next: response => this.products = response.data,
       error: error => console.log(error)
     })
@@ -56,7 +55,7 @@ export class ShopComponent implements OnInit {
     //Since multiple is false, we take only the first value
     const selectedOption = event.options[0];
     if (selectedOption) {
-      this.selectedSort = selectedOption.value;
+      this.shopParams.sort = selectedOption.value;
       this.getProducts();
     }
   }
@@ -66,16 +65,16 @@ export class ShopComponent implements OnInit {
     const dialogRef = this.dialogService.open(FiltersDialogComponent, {
       minWidth: '500px',
       data: {
-        selectedBrands: this.selectedBrands,
-        selectedTypes: this.selectedTypes
+        selectedBrands: this.shopParams.brands,
+        selectedTypes: this.shopParams.types
       }
     });
     dialogRef.afterClosed().subscribe({
       //Result data is from FiltersDialogComponent
       next: result => {
         if (result) {
-        this.selectedBrands = result.selectedBrands;
-        this.selectedTypes = result.selectedTypes;
+        this.shopParams.brands = result.selectedBrands;
+        this.shopParams.types = result.selectedTypes;
         this.getProducts();
         }
 
