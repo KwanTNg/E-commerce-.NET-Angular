@@ -2,6 +2,7 @@ using API.Middleware;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,16 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 builder.Services.AddCors();
+
+//Redis database
+builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
+{
+    var connString = builder.Configuration.GetConnectionString("Redis");
+    if (connString == null) throw new Exception("Cannnot get redis connection string");
+    var configuration = ConfigurationOptions.Parse(connString, true);
+    return ConnectionMultiplexer.Connect(configuration);
+}
+);
 
 // Anything before this line is considered service
 // Anything after this line is considered middleware

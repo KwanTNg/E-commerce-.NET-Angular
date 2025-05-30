@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "mB0Rrq5XNw8=",
+  "dgSpecHash": "21y0vnd9nlU=",
   "success": true,
   "projectFilePath": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/API.csproj",
   "expectedPackageFiles": [
@@ -48,6 +48,8 @@
     "/Users/kwantungng/.nuget/packages/microsoft.sqlserver.server/1.0.0/microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "/Users/kwantungng/.nuget/packages/microsoft.win32.systemevents/6.0.0/microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "/Users/kwantungng/.nuget/packages/mono.texttemplating/3.0.0/mono.texttemplating.3.0.0.nupkg.sha512",
+    "/Users/kwantungng/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/kwantungng/.nuget/packages/stackexchange.redis/2.8.37/stackexchange.redis.2.8.37.nupkg.sha512",
     "/Users/kwantungng/.nuget/packages/system.clientmodel/1.0.0/system.clientmodel.1.0.0.nupkg.sha512",
     "/Users/kwantungng/.nuget/packages/system.codedom/6.0.0/system.codedom.6.0.0.nupkg.sha512",
     "/Users/kwantungng/.nuget/packages/system.collections.immutable/7.0.0/system.collections.immutable.7.0.0.nupkg.sha512",

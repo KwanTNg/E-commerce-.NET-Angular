@@ -154,3 +154,5 @@
 /Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Runtime.Caching.dll
 /Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll
 /Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/bin/Debug/net9.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/bin/Debug/net9.0/Pipelines.Sockets.Unofficial.dll
+/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/bin/Debug/net9.0/StackExchange.Redis.dll
