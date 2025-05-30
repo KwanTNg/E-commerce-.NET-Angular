@@ -1,4 +1,4 @@
-<header class="shadow-md p-3 w-full">
+<header class="shadow-md p-3 w-full max-h-20 fixed top-0 z-50 bg-white">
     <div class="flex align-middle items-center justify-between max-w-screen-2xl mx-auto">
         <!-- image height 64 pixels -->
         <img routerLink="/" src="/images/logo.png" alt="app logo" class="max-h-16">
@@ -24,5 +24,5 @@
 </header>
 
 @if (busyService.loading) {
-    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    <mat-progress-bar mode="indeterminate" class="fixed top-20 z-50"></mat-progress-bar>
 }
