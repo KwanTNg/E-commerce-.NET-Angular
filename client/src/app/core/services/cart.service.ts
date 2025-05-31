@@ -3,6 +3,7 @@ import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
 import { Cart, CartItem } from '../../shared/models/cart';
 import { Product } from '../../shared/models/product';
+import { map } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,9 +15,14 @@ export class CartService {
   cart = signal<Cart | null>(null);
 
   getCart(id: string) {
-    return this.http.get<Cart>(this.baseUrl + 'cart?id=' + id).subscribe({
-      next: cart => this.cart.set(cart)
-    })
+    //if we want to return observable, so that is can be use by another function, use pipe, not subscribe
+    return this.http.get<Cart>(this.baseUrl + 'cart?id=' + id).pipe(
+      map(cart => {
+        this.cart.set(cart);
+        return cart;
+      })
+    )
+
   }
 
   setCart(cart: Cart) {
