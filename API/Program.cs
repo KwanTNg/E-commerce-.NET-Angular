@@ -1,4 +1,5 @@
 using API.Middleware;
+using Core.Entities;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Services;
@@ -33,6 +34,10 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
 );
 builder.Services.AddSingleton<ICartService, CartService>();
 
+builder.Services.AddAuthentication();
+builder.Services.AddIdentityApiEndpoints<AppUser>()
+    .AddEntityFrameworkStores<StoreContext>();
+
 // Anything before this line is considered service
 // Anything after this line is considered middleware
 var app = builder.Build();
@@ -44,6 +49,7 @@ app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
 .WithOrigins("http://localhost:4200", "https://localhost:4200"));
 
 app.MapControllers();
+app.MapIdentityApi<AppUser>();
 
 //this is use outside of dependency injection
 try

@@ -47,3 +47,7 @@ ng add @angular/material
 Tailwinds intelligence
 If does not work, go to settings
 "tailwindCSS.experimental.configFile": "client/src/styles.scss"
+
+.net identity
+in nuget, install microsoft.extensions.identity.stores in core
+microsoft.aspnetcore.identity.entityframeworkcore in infrastructure
