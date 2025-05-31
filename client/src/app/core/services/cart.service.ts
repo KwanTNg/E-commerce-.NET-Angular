@@ -61,6 +61,36 @@ export class CartService {
     this.setCart(cart);
   }
 
+  removeItemFromCart(productId: number, quantity = 1) {
+    const cart = this.cart();
+    if (!cart) return;
+    const index = cart.items.findIndex(x => x.productId === productId);
+    //-1 means item not in cart
+    if (index !== -1) {
+      if (cart.items[index].quantity > quantity) {
+        cart.items[index].quantity -= quantity;
+      } else {
+        //remove the item
+        cart.items.splice(index, 1);
+      }
+      if (cart.items.length === 0) {
+        //remove the cart
+        this.deleteCart();
+      } else {
+        //update the cart
+        this.setCart(cart);
+      }
+    }
+  }
+  deleteCart() {
+    this.http.delete(this.baseUrl + 'cart?id=' + this.cart()?.id).subscribe({
+      next: () => {
+        localStorage.removeItem('cart_id');
+        this.cart.set(null);
+      }
+    })
+  }
+
   private addOrUpdateItem(items: CartItem[], item: CartItem, quantity: number): CartItem[] {
     //Check if the item already exist in our basket
     const index = items.findIndex(x => x.productId === item.productId);
