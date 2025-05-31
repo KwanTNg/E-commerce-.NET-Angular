@@ -11,6 +11,8 @@ namespace Infrastructure.Data;
 public class StoreContext(DbContextOptions options) : IdentityDbContext<AppUser>(options)
 {
     public DbSet<Product> Products { get; set; }
+    //we can query address directly by adding it in storecontext
+    public DbSet<Address> Addresses { get; set; }
 
     // Any new configurations that we are create will be applied based on what we have in this line
     protected override void OnModelCreating(ModelBuilder modelBuilder)
