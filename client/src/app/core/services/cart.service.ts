@@ -1,7 +1,8 @@
 import { inject, Injectable, signal } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 import { HttpClient } from '@angular/common/http';
-import { Cart } from '../../shared/models/cart';
+import { Cart, CartItem } from '../../shared/models/cart';
+import { Product } from '../../shared/models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -22,5 +23,56 @@ export class CartService {
     return this.http.post<Cart>(this.baseUrl + 'cart', cart).subscribe({
       next: cart => this.cart.set(cart)
     })
+  }
+
+  addItemToCart(item: CartItem | Product, quantity = 1) {
+    //Check if there is a cart, if not create a cart
+    //this.cart() is a signal
+    const cart = this.cart() ?? this.createCart()
+    //Check if it is product before adding to cart
+    if (this.isProduct(item)) {
+      item = this.mapProductToCartItem(item);
+    }
+    cart.items = this.addOrUpdateItem(cart.items, item, quantity);
+    // Update the database and signal
+    this.setCart(cart);
+  }
+
+  private addOrUpdateItem(items: CartItem[], item: CartItem, quantity: number): CartItem[] {
+    //Check if the item already exist in our basket
+    const index = items.findIndex(x => x.productId === item.productId);
+    if (index === -1) {
+      item.quantity = quantity;
+      items.push(item);
+    } else {
+      items[index].quantity += quantity
+    }
+    return items;
+  }
+
+  private mapProductToCartItem(item: Product): CartItem {
+    return {
+      productId: item.id,
+      productName: item.name,
+      price: item.price,
+      quantity: 0,
+      pictureUrl: item.pictureUrl,
+      brand: item.brand,
+      type: item.type
+    }
+  }
+
+  //return is a boolean, check if the item is Product or not
+  private isProduct(item: CartItem | Product): item is Product {
+    return (item as Product).id !== undefined;
+  }
+
+
+  private createCart(): Cart {
+    //new Cart() will create a new cart
+    const cart = new Cart();
+    //store card id in local storage
+    localStorage.setItem('cart_id', cart.id);
+    return cart;
   }
 }
