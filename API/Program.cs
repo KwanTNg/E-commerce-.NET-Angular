@@ -37,6 +37,7 @@ builder.Services.AddSingleton<ICartService, CartService>();
 builder.Services.AddAuthentication();
 builder.Services.AddIdentityApiEndpoints<AppUser>()
     .AddEntityFrameworkStores<StoreContext>();
+builder.Services.AddScoped<IPaymentService, PaymentService>();
 
 // Anything before this line is considered service
 // Anything after this line is considered middleware
