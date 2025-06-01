@@ -33,7 +33,8 @@ export class LoginComponent {
   onSubmit() {
     this.accountService.login(this.loginForm.value).subscribe({
       next: () => {
-        this.accountService.getUserInfo();
+        //Need to use subsribe for observable, even though pipe was used
+        this.accountService.getUserInfo().subscribe();
         //Note / means absolute path
         this.router.navigateByUrl('/shop');
       }
