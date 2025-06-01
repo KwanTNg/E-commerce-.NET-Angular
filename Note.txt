@@ -55,3 +55,5 @@ microsoft.aspnetcore.identity.entityframeworkcore in infrastructure
 dotnet ef migrations add IdentityAdded -s API -p Infrastructure
 
 dotnet ef migrations add AddressAdded -s API -p Infrastructure
+
+dotnet ef migrations add DeliveryMethodsAdded -p Infrastructure -s API
