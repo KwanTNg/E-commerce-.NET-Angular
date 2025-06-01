@@ -59,7 +59,7 @@ public class AccountController(SignInManager<AppUser> signInManager) : BaseApiCo
     }
 
     //this endpoint does not hit database, no need to use async
-    [HttpGet]
+    [HttpGet("auth-status")]
     public ActionResult GetAuthState()
     {
         //It just tell if user is authenticated or not
