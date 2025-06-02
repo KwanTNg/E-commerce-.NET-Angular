@@ -84,7 +84,10 @@ export class StripeService {
     //what we get back is payment intent id and client secret
     return this.http.post<Cart>(this.baseUrl + 'payments/' + cart.id, {}).pipe(
       map(cart => {
-        this.cartService.cart.set(cart);
+        //this only save locally, not to our database
+        //this.cartService.cart.set(cart);
+        //this save locally as well as updating our database
+        this.cartService.setCart(cart);
         return cart;
       })
     )
