@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnDestroy, OnInit } from '@angular/core';
 import { OrderSummaryComponent } from "../../shared/components/order-summary/order-summary.component";
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatButton } from '@angular/material/button';
@@ -18,7 +18,7 @@ import { SnackbarService } from '../../core/services/snackbar.service';
   templateUrl: './checkout.component.html',
   styleUrl: './checkout.component.scss'
 })
-export class CheckoutComponent implements OnInit {
+export class CheckoutComponent implements OnInit, OnDestroy {
   private stripeService = inject(StripeService);
   private snackbar = inject(SnackbarService);
   addressElement?: StripeAddressElement;
@@ -31,6 +31,12 @@ export class CheckoutComponent implements OnInit {
     }catch (error:any) {
       this.snackbar.error(error.message);
     }
+  }
+
+  //the address will be reset whenever checkout component is disposed of
+  //so user cannot get other's address even he has same stripe element
+  ngOnDestroy(): void {
+    this.stripeService.disposeElements();
   }
 
 }
