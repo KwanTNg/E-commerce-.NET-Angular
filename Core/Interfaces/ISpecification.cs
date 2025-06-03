@@ -12,6 +12,11 @@ public interface ISpecification<T>
     Expression<Func<T, object>>? OrderBy { get; }
     Expression<Func<T, object>>? OrderByDescending { get; }
 
+    //for eager loading
+    List<Expression<Func<T, object>>> Includes { get; }
+    //for ThenInclude
+    List<string> IncludesStrings { get; }
+
     //for projection
     bool IsDistinct { get; }
 
