@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using API.Extensions;
 using Core.Entities;
+using Core.Specifications;
 
 namespace API.Controllers;
 
@@ -61,5 +62,21 @@ public class OrdersController(ICartService cartService, IUnitOfWork unit) : Base
         return BadRequest("Problem creating order");
     }
 
+    [HttpGet]
+    public async Task<ActionResult<IReadOnlyList<Order>>> GetOrdersForUser()
+    {
+        var spec = new OrderSpecification(User.GetEmail());
+        var orders = await unit.Repository<Order>().ListAsync(spec);
+        return Ok(orders);
+    }
+
+    [HttpGet("{id:int}")]
+    public async Task<ActionResult<Order>> GetOrderById(int id)
+    {
+        var spec = new OrderSpecification(User.GetEmail(), id);
+        var order = await unit.Repository<Order>().GetEntityWithSpec(spec);
+        if (order == null) return NotFound();
+        return order;
+    }
     
 }

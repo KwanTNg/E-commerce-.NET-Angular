@@ -63,3 +63,5 @@ in nuget, install stripe.net, add to Infrastructure
 npm install @stripe/stripe-js
 
 dotnet ef migrations add OrderAggregateAdded -p Infrastructure -s API
+
+dotnet ef migrations add PaymentSummaryCorrection -p Infrastructure -s API
