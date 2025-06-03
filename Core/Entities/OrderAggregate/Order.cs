@@ -2,7 +2,7 @@ using System;
 
 namespace Core.Entities.OrderAggregate;
 
-public class Order
+public class Order : BaseEntity
 {
     public DateTime OrderDate { get; set; } = DateTime.UtcNow;
     public required string BuyerEmail { get; set; }

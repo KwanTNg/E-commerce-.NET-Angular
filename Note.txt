@@ -61,3 +61,5 @@ dotnet ef migrations add DeliveryMethodsAdded -p Infrastructure -s API
 in nuget, install stripe.net, add to Infrastructure
 
 npm install @stripe/stripe-js
+
+dotnet ef migrations add OrderAggregateAdded -p Infrastructure -s API
