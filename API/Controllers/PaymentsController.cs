@@ -1,16 +1,20 @@
 using System;
+using API.SignalR;
 using Core.Entities;
 using Core.Entities.OrderAggregate;
 using Core.Interfaces;
 using Core.Specifications;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Stripe;
+using API.Extensions;
 
 namespace API.Controllers;
 
 public class PaymentsController(IPaymentService paymentService,
-    IUnitOfWork unit, ILogger<PaymentsController> logger, IConfiguration config) : BaseApiController
+    IUnitOfWork unit, ILogger<PaymentsController> logger,
+    IConfiguration config, IHubContext<NotificationHub> hubContext) : BaseApiController
 {
     private readonly string _whSecret = "";
     //private readonly string _whSecret = config["StripeSettings:WhSecret"]!;
@@ -80,6 +84,11 @@ public class PaymentsController(IPaymentService paymentService,
             await unit.Complete();
 
             //TODO: SignalR
+            var connectionId = NotificationHub.GetConnectionIdByEmail(order.BuyerEmail);
+            if (!string.IsNullOrEmpty(connectionId))
+            {
+                await hubContext.Clients.Client(connectionId).SendAsync("OrderCompleteNotification", order.ToDto());
+            }
         }
     }
 
