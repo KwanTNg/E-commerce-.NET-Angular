@@ -21,6 +21,8 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 //Because we don't know the type, so use typeof
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
 builder.Services.AddCors();
 
 //Redis database
