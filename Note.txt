@@ -65,3 +65,7 @@ npm install @stripe/stripe-js
 dotnet ef migrations add OrderAggregateAdded -p Infrastructure -s API
 
 dotnet ef migrations add PaymentSummaryCorrection -p Infrastructure -s API
+
+brew install stripe/stripe-cli/stripe
+stripe login
+stripe listen --forward-to https://localhost:5203/api/payments/webhook -e payment_intent.succeeded
