@@ -16,8 +16,7 @@ public class PaymentsController(IPaymentService paymentService,
     IUnitOfWork unit, ILogger<PaymentsController> logger,
     IConfiguration config, IHubContext<NotificationHub> hubContext) : BaseApiController
 {
-    private readonly string _whSecret = "";
-    //private readonly string _whSecret = config["StripeSettings:WhSecret"]!;
+    private readonly string _whSecret = config["StripeSettings:WhSecret"]!;
 
     [Authorize]
     [HttpPost("{cartId}")]
@@ -71,7 +70,9 @@ public class PaymentsController(IPaymentService paymentService,
             ?? throw new Exception("Order not found");
 
             //check if the amount in stripe is same as in the database
-            if ((long)order.GetTotal() * 100 != intent.Amount)
+            //intent.Amount is in cent
+            //multiply the amount which is 0.00 by 100 first before converting to long(int)
+            if ((long)(order.GetTotal() * 100) != intent.Amount)
             {
                 //it will update in db
                 order.Status = OrderStatus.PaymentMismatch;

@@ -67,5 +67,10 @@ dotnet ef migrations add OrderAggregateAdded -p Infrastructure -s API
 dotnet ef migrations add PaymentSummaryCorrection -p Infrastructure -s API
 
 brew install stripe/stripe-cli/stripe
+Fix ownership: If you see it's owned by root or another user, run:
+sudo chown -R "$USER" ~/.config
+Check ownership and permissions of the .config directory:
+ls -ld ~/.config
+
 stripe login
 stripe listen --forward-to https://localhost:5203/api/payments/webhook -e payment_intent.succeeded
