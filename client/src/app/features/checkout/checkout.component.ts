@@ -128,6 +128,7 @@ export class CheckoutComponent implements OnInit, OnDestroy {
           const order = await this.createOrderModel();
           const orderResult = await firstValueFrom(this.orderService.createOrder(order));
           if (orderResult) {
+          this.orderService.orderComplete = true;
           //if sucess, remove the cart and delivery method
           this.cartSerive.deleteCart();
           this.cartSerive.selectedDelivery.set(null);
