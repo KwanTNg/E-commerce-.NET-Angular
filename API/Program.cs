@@ -56,9 +56,14 @@ app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials()
 app.UseAuthentication();
 app.UseAuthorization();
 
+//for serving static angular frontend in wwwroot folder
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapControllers();
 app.MapGroup("api").MapIdentityApi<AppUser>(); // api/login
 app.MapHub<NotificationHub>("/hub/notifications");
+app.MapFallbackToController("Index", "Fallback");
 
 //this is use outside of dependency injection
 try

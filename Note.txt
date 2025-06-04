@@ -76,3 +76,5 @@ stripe login
 stripe listen --forward-to https://localhost:5203/api/payments/webhook -e payment_intent.succeeded
 
 npm install @microsoft/signalr
+
+dotnet ef database drop -p Infrastructure -s API
