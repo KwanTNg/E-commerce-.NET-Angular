@@ -78,3 +78,6 @@ stripe listen --forward-to https://localhost:5203/api/payments/webhook -e paymen
 npm install @microsoft/signalr
 
 dotnet ef database drop -p Infrastructure -s API
+
+Install extension Azure App Service
+dotnet publish -c Release -o ./bin/Publish
