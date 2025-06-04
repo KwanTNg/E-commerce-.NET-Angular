@@ -3,12 +3,13 @@ import { inject, Injectable } from '@angular/core';
 import { Pagination } from '../../shared/models/pagination';
 import { Product } from '../../shared/models/product';
 import { ShopParams } from '../../shared/models/shopParams';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ShopService {
-  baseUrl = 'https://localhost:5203/api/';
+  baseUrl = environment.apiUrl;
   private http = inject(HttpClient);
   //Service is a singleton, properties stored available lifetime
   //types and brands are static lists, should store here
