@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gxAXK4qpR5fw6XKAmkeh4KF2uk5xcOchQQ1uhcttyhY=",
+  "Hash": "TNiONF4KB6NoNwXja2M98Eegfighjv3CuyJU5N6bLNo=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-o7s0d9ixlb.gz",
+      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-z78knuc4cc.gz",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/API",
-      "RelativePath": "index#[.{fingerprint=o7s0d9ixlb}]?.html.gz",
+      "RelativePath": "index#[.{fingerprint=z78knuc4cc}]?.html.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -31,11 +31,32 @@
       "RelatedAsset": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/index.html",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "2butd6z5pd",
-      "Integrity": "rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM=",
+      "Fingerprint": "w4yf31yj2e",
+      "Integrity": "kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/index.html"
+    },
+    {
+      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/3arnhtntl1-wtioz3b8ct.gz",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/API",
+      "RelativePath": "main-DNHV7X4L#[.{fingerprint=wtioz3b8ct}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-DNHV7X4L.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "o67p5uxq4m",
+      "Integrity": "oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-DNHV7X4L.js"
     },
     {
       "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/6x0scahnf1-vagikyz9qx.gz",
@@ -59,46 +80,25 @@
       "OriginalItemSpec": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/favicon.ico"
     },
     {
-      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/8c8265rbtd-zbw7lp98y1.gz",
+      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ho3lmsldx1-lqf6n6ly47.gz",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/API",
-      "RelativePath": "main-JCKDB35W#[.{fingerprint=zbw7lp98y1}]?.js.gz",
+      "RelativePath": "styles-7XIHWBIK#[.{fingerprint=lqf6n6ly47}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-JCKDB35W.js",
+      "RelatedAsset": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-7XIHWBIK.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dkwm649pvi",
-      "Integrity": "o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY=",
+      "Fingerprint": "uzenmqbsdx",
+      "Integrity": "ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-JCKDB35W.js"
-    },
-    {
-      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ml0rkilyps-433g8jdjgl.gz",
-      "SourceId": "API",
-      "SourceType": "Discovered",
-      "ContentRoot": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/",
-      "BasePath": "_content/API",
-      "RelativePath": "styles-ARVQWEMN#[.{fingerprint=433g8jdjgl}]?.css.gz",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-ARVQWEMN.css",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "Fingerprint": "euq55i2v0l",
-      "Integrity": "2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-ARVQWEMN.css"
+      "OriginalItemSpec": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-7XIHWBIK.css"
     },
     {
       "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/xet4zmiyf4-pjm38qobjh.gz",
@@ -724,19 +724,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "o7s0d9ixlb",
-      "Integrity": "1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg=",
+      "Fingerprint": "z78knuc4cc",
+      "Integrity": "YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/index.html"
     },
     {
-      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-JCKDB35W.js",
+      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-DNHV7X4L.js",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/",
       "BasePath": "_content/API",
-      "RelativePath": "main-JCKDB35W#[.{fingerprint}]?.js",
+      "RelativePath": "main-DNHV7X4L#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -745,11 +745,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zbw7lp98y1",
-      "Integrity": "b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4=",
+      "Fingerprint": "wtioz3b8ct",
+      "Integrity": "VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/main-JCKDB35W.js"
+      "OriginalItemSpec": "wwwroot/main-DNHV7X4L.js"
     },
     {
       "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/polyfills-B6TNHZQ6.js",
@@ -794,12 +794,12 @@
       "OriginalItemSpec": "wwwroot/prerendered-routes.json"
     },
     {
-      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-ARVQWEMN.css",
+      "Identity": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-7XIHWBIK.css",
       "SourceId": "API",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/",
       "BasePath": "_content/API",
-      "RelativePath": "styles-ARVQWEMN#[.{fingerprint}]?.css",
+      "RelativePath": "styles-7XIHWBIK#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -808,11 +808,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "433g8jdjgl",
-      "Integrity": "YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8=",
+      "Fingerprint": "lqf6n6ly47",
+      "Integrity": "00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/styles-ARVQWEMN.css"
+      "OriginalItemSpec": "wwwroot/styles-7XIHWBIK.css"
     }
   ],
   "Endpoints": [
@@ -841,7 +841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -902,7 +902,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -947,7 +947,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1002,7 +1002,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1055,7 +1055,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1092,7 +1092,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1139,7 +1139,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1192,7 +1192,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1229,7 +1229,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1276,7 +1276,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1337,7 +1337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1382,7 +1382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1435,7 +1435,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1480,7 +1480,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1517,7 +1517,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1562,7 +1562,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1599,7 +1599,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1644,7 +1644,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1681,7 +1681,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1726,7 +1726,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1763,7 +1763,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1800,7 +1800,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1845,7 +1845,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1890,7 +1890,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1927,7 +1927,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1972,7 +1972,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2009,7 +2009,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2054,7 +2054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2091,7 +2091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2128,7 +2128,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2173,7 +2173,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2210,7 +2210,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2255,7 +2255,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2292,7 +2292,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2337,7 +2337,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2382,7 +2382,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2419,7 +2419,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2464,7 +2464,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2501,7 +2501,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2538,7 +2538,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2583,7 +2583,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2628,7 +2628,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2665,7 +2665,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2702,7 +2702,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2747,7 +2747,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2792,7 +2792,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2829,7 +2829,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2866,7 +2866,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2911,7 +2911,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2956,7 +2956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2993,7 +2993,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3030,7 +3030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3075,7 +3075,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3120,7 +3120,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3157,7 +3157,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3202,7 +3202,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3239,7 +3239,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3284,7 +3284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3321,7 +3321,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3366,7 +3366,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3382,12 +3382,12 @@
     },
     {
       "Route": "index.html",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-o7s0d9ixlb.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-z78knuc4cc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000067208818"
+          "Quality": "0.000067199785"
         }
       ],
       "ResponseHeaders": [
@@ -3397,15 +3397,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14878"
+          "Value": "14880"
         },
         {
           "Name": "ETag",
-          "Value": "\"rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM=\""
+          "Value": "\"kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3425,13 +3425,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg=\""
+          "Value": "W/\"YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg="
+          "Value": "sha256-YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs="
         }
       ]
     },
@@ -3454,11 +3454,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg=\""
+          "Value": "\"YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3468,13 +3468,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg="
+          "Value": "sha256-YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs="
         }
       ]
     },
     {
       "Route": "index.html.gz",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-o7s0d9ixlb.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-z78knuc4cc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3483,7 +3483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14878"
+          "Value": "14880"
         },
         {
           "Name": "Content-Type",
@@ -3491,11 +3491,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM=\""
+          "Value": "\"kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3513,18 +3513,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM="
+          "Value": "sha256-kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI="
         }
       ]
     },
     {
-      "Route": "index.o7s0d9ixlb.html",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-o7s0d9ixlb.gz",
+      "Route": "index.z78knuc4cc.html",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-z78knuc4cc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000067208818"
+          "Quality": "0.000067199785"
         }
       ],
       "ResponseHeaders": [
@@ -3534,15 +3534,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14878"
+          "Value": "14880"
         },
         {
           "Name": "ETag",
-          "Value": "\"rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM=\""
+          "Value": "\"kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3562,13 +3562,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg=\""
+          "Value": "W/\"YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o7s0d9ixlb"
+          "Value": "z78knuc4cc"
         },
         {
           "Name": "label",
@@ -3576,12 +3576,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg="
+          "Value": "sha256-YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs="
         }
       ]
     },
     {
-      "Route": "index.o7s0d9ixlb.html",
+      "Route": "index.z78knuc4cc.html",
       "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/index.html",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3599,11 +3599,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg=\""
+          "Value": "\"YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3613,7 +3613,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o7s0d9ixlb"
+          "Value": "z78knuc4cc"
         },
         {
           "Name": "label",
@@ -3621,13 +3621,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1N8DEA7LTBY47M9ZbSi/+TJAmRRzb4DVFnLoqEs40Mg="
+          "Value": "sha256-YSrb7fc0Z0TgWxWKll2ij++ir8uxvYi3CExkfUN0/Gs="
         }
       ]
     },
     {
-      "Route": "index.o7s0d9ixlb.html.gz",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-o7s0d9ixlb.gz",
+      "Route": "index.z78knuc4cc.html.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/1dpm1p8bmc-z78knuc4cc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3636,7 +3636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "14878"
+          "Value": "14880"
         },
         {
           "Name": "Content-Type",
@@ -3644,11 +3644,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM=\""
+          "Value": "\"kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3666,7 +3666,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "o7s0d9ixlb"
+          "Value": "z78knuc4cc"
         },
         {
           "Name": "label",
@@ -3674,18 +3674,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-rrMV168z/h8PJQA0MHGcrGT3dGrs0I5gQiZH06ksneM="
+          "Value": "sha256-kMFrKZx4vPtx4QVZplVzHhK653bGsJJ+m2OXruy8ryI="
         }
       ]
     },
     {
-      "Route": "main-JCKDB35W.js",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/8c8265rbtd-zbw7lp98y1.gz",
+      "Route": "main-DNHV7X4L.js",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/3arnhtntl1-wtioz3b8ct.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000003936822"
+          "Quality": "0.000003930988"
         }
       ],
       "ResponseHeaders": [
@@ -3695,15 +3695,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "254011"
+          "Value": "254388"
         },
         {
           "Name": "ETag",
-          "Value": "\"o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY=\""
+          "Value": "\"oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3723,19 +3723,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4=\""
+          "Value": "W/\"VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4="
+          "Value": "sha256-VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM="
         }
       ]
     },
     {
-      "Route": "main-JCKDB35W.js",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-JCKDB35W.js",
+      "Route": "main-DNHV7X4L.js",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-DNHV7X4L.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3744,7 +3744,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1019077"
+          "Value": "1020297"
         },
         {
           "Name": "Content-Type",
@@ -3752,11 +3752,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4=\""
+          "Value": "\"VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3766,13 +3766,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4="
+          "Value": "sha256-VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM="
         }
       ]
     },
     {
-      "Route": "main-JCKDB35W.js.gz",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/8c8265rbtd-zbw7lp98y1.gz",
+      "Route": "main-DNHV7X4L.js.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/3arnhtntl1-wtioz3b8ct.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3781,7 +3781,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "254011"
+          "Value": "254388"
         },
         {
           "Name": "Content-Type",
@@ -3789,11 +3789,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY=\""
+          "Value": "\"oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3811,18 +3811,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY="
+          "Value": "sha256-oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8="
         }
       ]
     },
     {
-      "Route": "main-JCKDB35W.zbw7lp98y1.js",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/8c8265rbtd-zbw7lp98y1.gz",
+      "Route": "main-DNHV7X4L.wtioz3b8ct.js",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/3arnhtntl1-wtioz3b8ct.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000003936822"
+          "Quality": "0.000003930988"
         }
       ],
       "ResponseHeaders": [
@@ -3832,15 +3832,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "254011"
+          "Value": "254388"
         },
         {
           "Name": "ETag",
-          "Value": "\"o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY=\""
+          "Value": "\"oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3860,27 +3860,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4=\""
+          "Value": "W/\"VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zbw7lp98y1"
+          "Value": "wtioz3b8ct"
         },
         {
           "Name": "label",
-          "Value": "main-JCKDB35W.js"
+          "Value": "main-DNHV7X4L.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4="
+          "Value": "sha256-VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM="
         }
       ]
     },
     {
-      "Route": "main-JCKDB35W.zbw7lp98y1.js",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-JCKDB35W.js",
+      "Route": "main-DNHV7X4L.wtioz3b8ct.js",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/main-DNHV7X4L.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3889,7 +3889,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1019077"
+          "Value": "1020297"
         },
         {
           "Name": "Content-Type",
@@ -3897,11 +3897,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4=\""
+          "Value": "\"VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3911,21 +3911,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zbw7lp98y1"
+          "Value": "wtioz3b8ct"
         },
         {
           "Name": "label",
-          "Value": "main-JCKDB35W.js"
+          "Value": "main-DNHV7X4L.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-b2jp2WaEGXVi2foumfQsQiMN+xpamlZ1Zpof+6gbFP4="
+          "Value": "sha256-VBQ6eg0B4i445dGgRheG3J4ejmmGBUx7V6AU4dTx8lM="
         }
       ]
     },
     {
-      "Route": "main-JCKDB35W.zbw7lp98y1.js.gz",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/8c8265rbtd-zbw7lp98y1.gz",
+      "Route": "main-DNHV7X4L.wtioz3b8ct.js.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/3arnhtntl1-wtioz3b8ct.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3934,7 +3934,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "254011"
+          "Value": "254388"
         },
         {
           "Name": "Content-Type",
@@ -3942,11 +3942,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY=\""
+          "Value": "\"oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3964,15 +3964,15 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "zbw7lp98y1"
+          "Value": "wtioz3b8ct"
         },
         {
           "Name": "label",
-          "Value": "main-JCKDB35W.js.gz"
+          "Value": "main-DNHV7X4L.js.gz"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-o4vIK9AdFAW0nLoHeuG2VwSUoClkjI5asLxqjzGMsAY="
+          "Value": "sha256-oN0Aqy7Ddj56gEd/V397L6kzchIrry6fZgjYyuz96t8="
         }
       ]
     },
@@ -4001,7 +4001,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4054,7 +4054,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4091,7 +4091,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4138,7 +4138,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4199,7 +4199,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4244,7 +4244,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4299,7 +4299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4352,7 +4352,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4389,7 +4389,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4436,7 +4436,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4497,7 +4497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4542,7 +4542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4573,13 +4573,13 @@
       ]
     },
     {
-      "Route": "styles-ARVQWEMN.433g8jdjgl.css",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ml0rkilyps-433g8jdjgl.gz",
+      "Route": "styles-7XIHWBIK.css",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ho3lmsldx1-lqf6n6ly47.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000055429300"
+          "Quality": "0.000055266939"
         }
       ],
       "ResponseHeaders": [
@@ -4589,19 +4589,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18040"
+          "Value": "18093"
         },
         {
           "Name": "ETag",
-          "Value": "\"2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk=\""
+          "Value": "\"ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4617,27 +4617,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8=\""
+          "Value": "W/\"00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "433g8jdjgl"
-        },
-        {
-          "Name": "label",
-          "Value": "styles-ARVQWEMN.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8="
+          "Value": "sha256-00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw="
         }
       ]
     },
     {
-      "Route": "styles-ARVQWEMN.433g8jdjgl.css",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-ARVQWEMN.css",
+      "Route": "styles-7XIHWBIK.css",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-7XIHWBIK.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4646,7 +4638,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "134986"
+          "Value": "135181"
         },
         {
           "Name": "Content-Type",
@@ -4654,35 +4646,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8=\""
+          "Value": "\"00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "433g8jdjgl"
-        },
-        {
-          "Name": "label",
-          "Value": "styles-ARVQWEMN.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8="
+          "Value": "sha256-00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw="
         }
       ]
     },
     {
-      "Route": "styles-ARVQWEMN.433g8jdjgl.css.gz",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ml0rkilyps-433g8jdjgl.gz",
+      "Route": "styles-7XIHWBIK.css.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ho3lmsldx1-lqf6n6ly47.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4691,7 +4675,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18040"
+          "Value": "18093"
         },
         {
           "Name": "Content-Type",
@@ -4699,15 +4683,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk=\""
+          "Value": "\"ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -4720,27 +4704,19 @@
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "433g8jdjgl"
-        },
-        {
-          "Name": "label",
-          "Value": "styles-ARVQWEMN.css.gz"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk="
+          "Value": "sha256-ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE="
         }
       ]
     },
     {
-      "Route": "styles-ARVQWEMN.css",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ml0rkilyps-433g8jdjgl.gz",
+      "Route": "styles-7XIHWBIK.lqf6n6ly47.css",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ho3lmsldx1-lqf6n6ly47.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000055429300"
+          "Quality": "0.000055266939"
         }
       ],
       "ResponseHeaders": [
@@ -4750,19 +4726,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18040"
+          "Value": "18093"
         },
         {
           "Name": "ETag",
-          "Value": "\"2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk=\""
+          "Value": "\"ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4778,19 +4754,27 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8=\""
+          "Value": "W/\"00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "lqf6n6ly47"
+        },
+        {
+          "Name": "label",
+          "Value": "styles-7XIHWBIK.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8="
+          "Value": "sha256-00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw="
         }
       ]
     },
     {
-      "Route": "styles-ARVQWEMN.css",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-ARVQWEMN.css",
+      "Route": "styles-7XIHWBIK.lqf6n6ly47.css",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/wwwroot/styles-7XIHWBIK.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4799,7 +4783,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "134986"
+          "Value": "135181"
         },
         {
           "Name": "Content-Type",
@@ -4807,27 +4791,35 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8=\""
+          "Value": "\"00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "lqf6n6ly47"
+        },
+        {
+          "Name": "label",
+          "Value": "styles-7XIHWBIK.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-YMiWOpBkNH+0uHBaQ9J6yx1TCUxRH3KaI7AK37YjHb8="
+          "Value": "sha256-00vNr7Ep7bXQ63vi4jmXp/y5CziBgQeZG5D/Lp5jjLw="
         }
       ]
     },
     {
-      "Route": "styles-ARVQWEMN.css.gz",
-      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ml0rkilyps-433g8jdjgl.gz",
+      "Route": "styles-7XIHWBIK.lqf6n6ly47.css.gz",
+      "AssetFile": "/Users/kwantungng/Library/CloudStorage/OneDrive-RobertGordonUniversity/MSc Project/E-commence App/API/obj/Debug/net9.0/compressed/ho3lmsldx1-lqf6n6ly47.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4836,7 +4828,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "18040"
+          "Value": "18093"
         },
         {
           "Name": "Content-Type",
@@ -4844,15 +4836,15 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk=\""
+          "Value": "\"ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 04 Jun 2025 13:51:15 GMT"
+          "Value": "Wed, 04 Jun 2025 15:47:37 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -4865,8 +4857,16 @@
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "lqf6n6ly47"
+        },
+        {
+          "Name": "label",
+          "Value": "styles-7XIHWBIK.css.gz"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-2ltASRzPpfbLQl3L1mn2WRsvuV1Cg56z5Oa5Sndp4Tk="
+          "Value": "sha256-ViZxIzAXZ4D8Uk8sM9qvCcX+p/civm02l/OQgzU+rJE="
         }
       ]
     }

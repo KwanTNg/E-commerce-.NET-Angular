@@ -125,14 +125,18 @@ export class StripeService {
 
   createOrUpdatePaymentIntent(){
     const cart = this.cartService.cart();
+    const hasClientSecret = !!cart?.clientSecret;
     if (!cart) throw new Error('Problem with cart');
     //what we get back is payment intent id and client secret
     return this.http.post<Cart>(this.baseUrl + 'payments/' + cart.id, {}).pipe(
-      map(cart => {
+      map(async cart => {
         //this only save locally, not to our database
         //this.cartService.cart.set(cart);
         //this save locally as well as updating our database
-        this.cartService.setCart(cart);
+        if (!hasClientSecret) {
+        await firstValueFrom(this.cartService.setCart(cart));
+        return cart;
+        }
         return cart;
       })
     )

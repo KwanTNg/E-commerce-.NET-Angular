@@ -1,9 +1,9 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { environment } from '../../../environments/environment';
 import { HttpClient } from '@angular/common/http';
-import { Cart, CartItem } from '../../shared/models/cart';
+import { Cart, CartItem, Coupon } from '../../shared/models/cart';
 import { Product } from '../../shared/models/product';
-import { map } from 'rxjs';
+import { firstValueFrom, map, tap } from 'rxjs';
 import { DeliveryMethod } from '../../shared/models/deliveryMethod';
 
 @Injectable({
@@ -24,13 +24,21 @@ export class CartService {
     const delivery = this.selectedDelivery();
     if (!cart) return null;
     const subtotal = cart.items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+    let discountValue = 0;
+    if (cart.coupon) {
+      if (cart.coupon.amountOff) {
+        discountValue = cart.coupon.amountOff;
+      } else if (cart.coupon.percentOff) {
+        discountValue = subtotal * (cart.coupon.percentOff /100);
+      }
+    }
     const shipping = delivery ? delivery.price : 0;
-    const discount = 0;
+    
     return {
       subtotal,
       shipping,
-      discount,
-      total: subtotal + shipping - discount
+      discount : discountValue,
+      total: subtotal + shipping - discountValue
     }
   })
 
@@ -46,12 +54,18 @@ export class CartService {
   }
 
   setCart(cart: Cart) {
-    return this.http.post<Cart>(this.baseUrl + 'cart', cart).subscribe({
-      next: cart => this.cart.set(cart)
-    })
+    return this.http.post<Cart>(this.baseUrl + 'cart', cart).pipe(
+      tap(cart => {
+        this.cart.set(cart)
+      })
+    )
   }
 
-  addItemToCart(item: CartItem | Product, quantity = 1) {
+  applyDiscount(code: string) {
+    return this.http.get<Coupon>(this.baseUrl + 'coupons/' + code);
+  }
+
+  async addItemToCart(item: CartItem | Product, quantity = 1) {
     //Check if there is a cart, if not create a cart
     //this.cart() is a signal
     const cart = this.cart() ?? this.createCart()
@@ -61,10 +75,10 @@ export class CartService {
     }
     cart.items = this.addOrUpdateItem(cart.items, item, quantity);
     // Update the database and signal
-    this.setCart(cart);
+    await firstValueFrom(this.setCart(cart));
   }
 
-  removeItemFromCart(productId: number, quantity = 1) {
+  async removeItemFromCart(productId: number, quantity = 1) {
     const cart = this.cart();
     if (!cart) return;
     const index = cart.items.findIndex(x => x.productId === productId);
@@ -81,7 +95,7 @@ export class CartService {
         this.deleteCart();
       } else {
         //update the cart
-        this.setCart(cart);
+        await firstValueFrom(this.setCart(cart));
       }
     }
   }
