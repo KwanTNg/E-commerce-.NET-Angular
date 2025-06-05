@@ -81,3 +81,5 @@ dotnet ef database drop -p Infrastructure -s API
 
 Install extension Azure App Service
 dotnet publish -c Release -o ./bin/Publish
+
+dotnet ef migrations add RolesAdded -s API -p Infrastructure
