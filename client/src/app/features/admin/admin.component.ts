@@ -4,7 +4,6 @@ import { Order } from '../../shared/models/order';
 import { AdminService } from '../../core/services/admin.service';
 import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { OrderParams } from '../../shared/models/orderParams';
-import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
 import { MatLabel, MatSelectChange, MatSelectModule } from '@angular/material/select';
 import { CurrencyPipe, DatePipe } from '@angular/common';
@@ -17,7 +16,6 @@ import { RouterLink } from '@angular/router';
   imports: [
     MatTableModule,
     MatPaginatorModule,
-    MatButton,
     MatIcon,
     MatSelectModule,
     DatePipe,
@@ -67,4 +65,14 @@ export class AdminComponent implements OnInit {
       this.orderParams.pageNumber = 1;
       this.loadOrders();
     }
+  
+  refundOrder(id: number) {
+    this.adminService.refundOrder(id).subscribe({
+      next: order => {
+        //if it is we will return the order and update it with the order coming back from API
+        //Otherwise keep original order in place
+        this.dataSource.data = this.dataSource.data.map(o => o.id === id ? order : o)
+      }
+    })
+  }
 }
