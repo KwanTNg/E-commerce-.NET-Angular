@@ -8,4 +8,5 @@ public interface IPaymentService
     //Use backend to create payment intent
     Task<ShoppingCart> CreateOrUpdatePaymentIntent(string cartId);
 
+    Task<string> RefundPayment(string paymentIntentId);
 }
