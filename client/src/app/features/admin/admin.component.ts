@@ -2,7 +2,7 @@ import { AfterViewInit, Component, inject, OnInit, ViewChild } from '@angular/co
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { Order } from '../../shared/models/order';
 import { AdminService } from '../../core/services/admin.service';
-import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatPaginator, MatPaginatorModule, PageEvent } from '@angular/material/paginator';
 import { OrderParams } from '../../shared/models/orderParams';
 import { MatButton } from '@angular/material/button';
 import { MatIcon } from '@angular/material/icon';
@@ -10,6 +10,7 @@ import { MatLabel, MatSelectChange, MatSelectModule } from '@angular/material/se
 import { CurrencyPipe, DatePipe } from '@angular/common';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTabsModule } from '@angular/material/tabs';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -23,28 +24,26 @@ import { MatTabsModule } from '@angular/material/tabs';
     CurrencyPipe,
     MatLabel,
     MatTooltipModule,
-    MatTabsModule
+    MatTabsModule,
+    RouterLink
   ],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.scss'
 })
-export class AdminComponent implements AfterViewInit, OnInit {
-  displayedColumns: string[] = ['id', 'buyerEmail', 'orderDate', 'status', 'action'];
+export class AdminComponent implements OnInit {
+  displayedColumns: string[] = ['id', 'buyerEmail', 'orderDate', 'total', 'status', 'action'];
   dataSource = new MatTableDataSource<Order>([]);
   private adminService = inject(AdminService);
   orderParams = new OrderParams();
   totalItems = 0;
   statusOptions = ['All', 'PaymentReceived', 'PaymentMismatch', 'Refunded', 'Pending']
   
-  @ViewChild(MatPaginator) paginator!: MatPaginator;
   
   ngOnInit(): void {
     this.loadOrders();
   }
 
-  ngAfterViewInit(): void {
-    this.dataSource.paginator = this.paginator;
-  }
+ 
 
   loadOrders() {
     this.adminService.getOrders(this.orderParams).subscribe({
@@ -57,7 +56,7 @@ export class AdminComponent implements AfterViewInit, OnInit {
     })
   }
 
-  onPageChange(event: any) {
+  onPageChange(event: PageEvent) {
     this.orderParams.pageNumber = event.pageIndex + 1;
     this.orderParams.pageSize = event.pageSize;
     this.loadOrders();
