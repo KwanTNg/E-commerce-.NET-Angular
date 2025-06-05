@@ -25,7 +25,29 @@ public class OrderSpecification : BaseSpecification<Order>
         base(x => x.PaymentIntentId == paymentIntentId)
     {
         AddInclude("OrderItems");
-        AddInclude("DeliveryMethod");   
+        AddInclude("DeliveryMethod");
+    }
+
+    //for admin, get all orders
+    public OrderSpecification(OrderSpecParams specParams) : base(x =>
+        string.IsNullOrEmpty(specParams.Status) || x.Status == ParseStatus(specParams.Status))
+    {
+        AddInclude("OrderItems");
+        AddInclude("DeliveryMethod");
+        ApplyPaging(specParams.PageIndex * (specParams.PageIndex - 1), specParams.PageSize);
+        AddOrderByDescending(x => x.OrderDate);
+
+    }
+    //for admin, get an order by id
+    public OrderSpecification(int id) : base(x => x.Id == id)
+    {
+        AddInclude("OrderItems");
+        AddInclude("DeliveryMethod");
+    }
+    private static OrderStatus? ParseStatus(string status)
+    {
+        if (Enum.TryParse<OrderStatus>(status, true, out var result)) return result;
+        return null;
     }
 
 }
