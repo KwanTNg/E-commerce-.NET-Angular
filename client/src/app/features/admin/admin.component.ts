@@ -2,13 +2,28 @@ import { AfterViewInit, Component, inject, OnInit, ViewChild } from '@angular/co
 import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import { Order } from '../../shared/models/order';
 import { AdminService } from '../../core/services/admin.service';
-import { MatPaginator } from '@angular/material/paginator';
+import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { OrderParams } from '../../shared/models/orderParams';
+import { MatButton } from '@angular/material/button';
+import { MatIcon } from '@angular/material/icon';
+import { MatLabel, MatSelectChange, MatSelectModule } from '@angular/material/select';
+import { CurrencyPipe, DatePipe } from '@angular/common';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
   selector: 'app-admin',
   imports: [
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatButton,
+    MatIcon,
+    MatSelectModule,
+    DatePipe,
+    CurrencyPipe,
+    MatLabel,
+    MatTooltipModule,
+    MatTabsModule
   ],
   templateUrl: './admin.component.html',
   styleUrl: './admin.component.scss'
@@ -48,7 +63,7 @@ export class AdminComponent implements AfterViewInit, OnInit {
     this.loadOrders();
   }
 
-    onFilterSelect(event: any) {
+    onFilterSelect(event: MatSelectChange) {
       this.orderParams.filter = event.value;
       this.orderParams.pageNumber = 1;
       this.loadOrders();
