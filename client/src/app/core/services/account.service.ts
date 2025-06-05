@@ -1,4 +1,4 @@
-import { inject, Injectable, signal } from '@angular/core';
+import { computed, inject, Injectable, signal } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Address, User } from '../../shared/models/user';
 import { environment } from '../../../environments/environment';
@@ -13,6 +13,12 @@ export class AccountService {
   private http = inject(HttpClient);
   private signalrService = inject(SignalrService);
   currentUser = signal<User | null>(null);
+  //Create a computed property to check if the user has an admin role
+  //A user can have mutiple roles
+  isAdmin = computed(() => {
+    const roles = this.currentUser()?.roles;
+    return Array.isArray(roles) ? roles.includes('Admin') : roles === 'Admin';
+  })
 
   login(values: any) {
     let params = new HttpParams();
