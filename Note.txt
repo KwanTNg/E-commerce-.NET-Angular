@@ -83,3 +83,5 @@ Install extension Azure App Service
 dotnet publish -c Release -o ./bin/Publish
 
 dotnet ef migrations add RolesAdded -s API -p Infrastructure
+
+ng g d shared/directives/is-admin --skip-test

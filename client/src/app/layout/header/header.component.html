@@ -10,7 +10,7 @@
             >Home</a>
             <a routerLink="/shop" routerLinkActive="active">Shop</a>
             <a routerLink="/test-error" routerLinkActive="active">Error</a>
-            <a routerLink="/admin" routerLinkActive="active">Admin</a>
+            <a *appIsAdmin routerLink="/admin" routerLinkActive="active">Admin</a>
          </nav>
          <!-- align-middle vertical alignment -->
          <div class="flex gap-3 align-middle">
